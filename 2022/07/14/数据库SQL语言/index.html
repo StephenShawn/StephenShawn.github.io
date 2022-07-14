@@ -29,7 +29,7 @@
 <meta property="og:description" content="DDL (Data Definition Language): 数据定义语言 DML (Data Manipulation Language)：数据操作语言 DCL (Data Control Language): 数据控制语言 DQL (Data Query Language): 数据查询语言   ddl：数据库或表的结构操作(****) dml：对表的记录进行更新(增、删、改)(****)">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-07-14T00:39:00.000Z">
-<meta property="article:modified_time" content="2022-07-14T05:25:24.716Z">
+<meta property="article:modified_time" content="2022-07-14T09:14:45.639Z">
 <meta property="article:author" content="Stephen Shawn">
 <meta property="article:tag" content="SQL">
 <meta name="twitter:card" content="summary">
@@ -125,7 +125,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#DDL"><span class="nav-number">1.</span> <span class="nav-text">DDL</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="nav-number">1.1.</span> <span class="nav-text">一、数据库</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="nav-number">2.</span> <span class="nav-text">数据类型</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E8%A1%A8"><span class="nav-number">2.1.</span> <span class="nav-text">二、表</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#DML"><span class="nav-number">3.</span> <span class="nav-text">DML</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#DCL"><span class="nav-number">4.</span> <span class="nav-text">DCL</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#DDL"><span class="nav-number">1.</span> <span class="nav-text">DDL</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="nav-number">1.1.</span> <span class="nav-text">一、数据库</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="nav-number">2.</span> <span class="nav-text">数据类型</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E8%A1%A8"><span class="nav-number">2.1.</span> <span class="nav-text">二、表</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#DML"><span class="nav-number">3.</span> <span class="nav-text">DML</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#DCL"><span class="nav-number">4.</span> <span class="nav-text">DCL</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#DQL"><span class="nav-number">5.</span> <span class="nav-text">DQL</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0"><span class="nav-number">6.</span> <span class="nav-text">常用函数</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%81%9A%E5%90%88%E5%87%BD%E6%95%B0"><span class="nav-number">6.1.</span> <span class="nav-text">聚合函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%81%94%E5%90%88%E6%9F%A5%E8%AF%A2"><span class="nav-number">6.2.</span> <span class="nav-text">联合查询</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%81%9A%E5%90%88%E5%87%BD%E6%95%B0-1"><span class="nav-number">6.3.</span> <span class="nav-text">聚合函数</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -139,7 +139,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">21</span>
+          <span class="site-state-item-count">22</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -215,7 +215,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2022-07-14 08:39:00 / 修改时间：13:25:24" itemprop="dateCreated datePublished" datetime="2022-07-14T08:39:00+08:00">2022-07-14</time>
+      <time title="创建时间：2022-07-14 08:39:00 / 修改时间：17:14:45" itemprop="dateCreated datePublished" datetime="2022-07-14T08:39:00+08:00">2022-07-14</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -257,12 +257,9 @@
 <li><p>创建数据库：</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> DATABASE IF <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> MYDB CHARSET<span class="operator">=</span>utf8</span><br></pre></td></tr></table></figure></li>
 <li><p>修改数据库：</p>
-</li>
-</ul>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">AlTER</span> DATABASE MYDB CHARSET <span class="keyword">SET</span> utf8 </span><br></pre></td></tr></table></figure>
-<ul>
+  <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">AlTER</span> DATABASE MYDB CHARSET <span class="keyword">SET</span> utf8 </span><br></pre></td></tr></table></figure></li>
 <li><p>删除数据库</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">drop</span> database MYDB</span><br></pre></td></tr></table></figure>
+  <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">drop</span> database MYDB</span><br></pre></td></tr></table></figure>
 <h3 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h3></li>
 <li><p>int：整型;</p>
 </li>
@@ -333,9 +330,11 @@
 <li>给用户授权<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- 部分权限授权</span></span><br><span class="line"> <span class="keyword">GRANT</span> <span class="keyword">CREATE</span>,<span class="keyword">ALTER</span>,<span class="keyword">DROP</span>,<span class="keyword">INSERT</span>,UPDATE,<span class="keyword">DELETE</span>,<span class="keyword">SELECT</span> <span class="keyword">ON</span> mydb.<span class="operator">*</span> <span class="keyword">TO</span> shawn<span class="variable">@IP</span></span><br><span class="line"><span class="comment">-- 所有权限授权</span></span><br><span class="line"><span class="keyword">GRANT</span> <span class="keyword">ALL</span> <span class="keyword">ON</span> mydb.<span class="operator">*</span> username<span class="variable">@IP</span></span><br></pre></td></tr></table></figure></li>
 <li>撤销授权<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">REVOKE</span> <span class="keyword">CREATE</span>,<span class="keyword">ALTER</span>,<span class="keyword">DROP</span>,UPDATE,<span class="keyword">DELETE</span> <span class="keyword">ON</span> mydb.<span class="operator">*</span> <span class="keyword">FROM</span> username<span class="variable">@IP</span></span><br></pre></td></tr></table></figure></li>
 <li>查看权限<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SHOW</span> GRANTS <span class="keyword">FOR</span> username<span class="variable">@IP</span></span><br></pre></td></tr></table></figure></li>
-<li>删除用户<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DROP</span> <span class="keyword">USER</span> username<span class="variable">@IP</span></span><br></pre></td></tr></table></figure></li>
+<li>删除用户<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DROP</span> <span class="keyword">USER</span> username<span class="variable">@IP</span></span><br></pre></td></tr></table></figure>
+<h3 id="DQL"><a href="#DQL" class="headerlink" title="DQL"></a>DQL</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT * FROM tableName;</span><br></pre></td></tr></table></figure>
+<h3 id="常用函数"><a href="#常用函数" class="headerlink" title="常用函数"></a>常用函数</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">IFNUll(c1,v1);</span><br><span class="line">DATE_FORMAT(&quot;yyyy-MM-dd&quot;,&#x27;%Y-%m-%d&#x27;);</span><br><span class="line">CONCAT(v1,v2,v3);</span><br><span class="line">distinct;</span><br><span class="line">-- &#x27;_&#x27;匹配一个字符</span><br><span class="line">-- &#x27;%&#x27;匹配零个到N个字符</span><br><span class="line">like &#x27;_%&#x27;;</span><br><span class="line">-- （当前页-1）* 每页记录数</span><br><span class="line">limit (17-1)*8,8</span><br></pre></td></tr></table></figure></li>
 </ol>
-
+<h4 id="聚合函数"><a href="#聚合函数" class="headerlink" title="聚合函数"></a>聚合函数</h4><h4 id="联合查询"><a href="#联合查询" class="headerlink" title="联合查询"></a>联合查询</h4><h4 id="聚合函数-1"><a href="#聚合函数-1" class="headerlink" title="聚合函数"></a>聚合函数</h4>
     </div>
 
     
@@ -356,6 +355,9 @@
                 </a>
             </div>
             <div class="post-nav-item">
+                <a href="/2022/07/14/oracleSQL/" rel="next" title="oracleSQL">
+                  oracleSQL <i class="fa fa-chevron-right"></i>
+                </a>
             </div>
           </div>
     </footer>

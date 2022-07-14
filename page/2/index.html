@@ -136,7 +136,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">21</span>
+          <span class="site-state-item-count">22</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -177,6 +177,98 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://stephenshawn.github.io/2022/06/06/CentOS%E5%AE%89%E8%A3%85docker/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Stephen Shawn">
+      <meta itemprop="description" content="码农 程序猿 开发者">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Shawn's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/06/06/CentOS%E5%AE%89%E8%A3%85docker/" class="post-title-link" itemprop="url">centos安装docker</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2022-06-06 23:12:51" itemprop="dateCreated datePublished" datetime="2022-06-06T23:12:51+08:00">2022-06-06</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2022-06-27 18:32:58" itemprop="dateModified" datetime="2022-06-27T18:32:58+08:00">2022-06-27</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/docker/" itemprop="url" rel="index"><span itemprop="name">docker</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="install-on-CentOS-Install-Docker-Engine-on-CentOS-Docker-Documentation"><a href="#install-on-CentOS-Install-Docker-Engine-on-CentOS-Docker-Documentation" class="headerlink" title="[install on CentOS](Install Docker Engine on CentOS | Docker Documentation)"></a>[install on CentOS](<a target="_blank" rel="noopener" href="https://docs.docker.com/engine/install/centos/">Install Docker Engine on CentOS | Docker Documentation</a>)</h1><h3 id="Uninstall-old-versions"><a href="#Uninstall-old-versions" class="headerlink" title="Uninstall old versions"></a>Uninstall old versions</h3><hr>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">sudo yum remove docker \</span><br><span class="line">                  docker-client \</span><br><span class="line">                  docker-client-latest \</span><br><span class="line">                  docker-common \</span><br><span class="line">                  docker-latest \</span><br><span class="line">                  docker-latest-logrotate \</span><br><span class="line">                  docker-logrotate \</span><br><span class="line">                  docker-engine </span><br></pre></td></tr></table></figure>
+<h3 id="Install-using-the-repository"><a href="#Install-using-the-repository" class="headerlink" title="Install using the repository"></a>Install using the repository</h3><hr>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sudo yum install -y yum-utils</span><br><span class="line"> sudo yum-config-manager \</span><br><span class="line">    --add-repo \</span><br><span class="line">    http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo</span><br></pre></td></tr></table></figure>
+<h3 id="Install-Docker-Engine"><a href="#Install-Docker-Engine" class="headerlink" title="Install Docker Engine"></a>Install Docker Engine</h3><hr>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo yum update</span><br><span class="line">sudo yum install docker-ce docker-ce-cli containerd.io docker-compose-plugin</span><br></pre></td></tr></table></figure>
+
+<h3 id="Start-Docker"><a href="#Start-Docker" class="headerlink" title="Start Docker"></a>Start Docker</h3><hr>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl start docker</span><br></pre></td></tr></table></figure>
+
+<h3 id="Uninstall-Docker-Engine"><a href="#Uninstall-Docker-Engine" class="headerlink" title="Uninstall Docker Engine"></a>Uninstall Docker Engine</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo yum remove docker-ce docker-ce-cli containerd.io docker-compose-plugin</span><br><span class="line">sudo rm -rf /var/lib/docker</span><br><span class="line">sudo rm -rf /var/lib/containerd</span><br></pre></td></tr></table></figure>
+
+<h3 id="var-lib-docker-为默认工作目录"><a href="#var-lib-docker-为默认工作目录" class="headerlink" title="/var/lib/docker 为默认工作目录"></a>/var/lib/docker 为默认工作目录</h3><h3 id="阿里云镜像加速"><a href="#阿里云镜像加速" class="headerlink" title="阿里云镜像加速"></a>阿里云镜像加速</h3><hr>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">sudo mkdir -p /etc/docker</span><br><span class="line">sudo tee /etc/docker/daemon.json &lt;&lt;-&#x27;EOF&#x27;</span><br><span class="line">&#123;</span><br><span class="line">  &quot;registry-mirrors&quot;: [&quot;https://rz9fml8b.mirror.aliyuncs.com&quot;]</span><br><span class="line">&#125;</span><br><span class="line">EOF</span><br><span class="line">sudo systemctl daemon-reload</span><br><span class="line">sudo systemctl restart docker</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -1359,98 +1451,6 @@
     
     <div class="post-body" itemprop="articleBody">
           <h3 id="垃圾收集器有几种"><a href="#垃圾收集器有几种" class="headerlink" title="垃圾收集器有几种"></a>垃圾收集器有几种</h3><h3 id="垃圾收集器低层原理剖析"><a href="#垃圾收集器低层原理剖析" class="headerlink" title="垃圾收集器低层原理剖析"></a>垃圾收集器低层原理剖析</h3><h3 id="垃圾收集器算法优化"><a href="#垃圾收集器算法优化" class="headerlink" title="垃圾收集器算法优化"></a>垃圾收集器算法优化</h3>
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://stephenshawn.github.io/2021/11/10/%E7%A0%81%E5%88%B6%E4%B8%8E%E4%BD%8D%E8%BF%90%E7%AE%97/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Stephen Shawn">
-      <meta itemprop="description" content="码农 程序猿 开发者">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Shawn's blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/11/10/%E7%A0%81%E5%88%B6%E4%B8%8E%E4%BD%8D%E8%BF%90%E7%AE%97/" class="post-title-link" itemprop="url">码制与位运算</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2021-11-10 10:55:34 / 修改时间：11:47:13" itemprop="dateCreated datePublished" datetime="2021-11-10T10:55:34+08:00">2021-11-10</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E8%BF%9B%E5%88%B6%E4%B8%8E%E7%BC%96%E7%A0%81/" itemprop="url" rel="index"><span itemprop="name">进制与编码</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h3 id="二进制"><a href="#二进制" class="headerlink" title="二进制"></a>二进制</h3><p>0b00000001</p>
-<h3 id="八进制"><a href="#八进制" class="headerlink" title="八进制"></a>八进制</h3><p>0o001(python)</p>
-<h3 id="十六进制"><a href="#十六进制" class="headerlink" title="十六进制"></a>十六进制</h3><p>0xFE</p>
-<h3 id="原码"><a href="#原码" class="headerlink" title="原码"></a>原码</h3><blockquote>
-<p>将数字表述为二进制数，方便人看</p>
-</blockquote>
-<h3 id="反码"><a href="#反码" class="headerlink" title="反码"></a>反码</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">正数与原码相同</span><br><span class="line">负数符号位不变，其余位取反</span><br></pre></td></tr></table></figure>
-<h3 id="补码"><a href="#补码" class="headerlink" title="补码"></a>补码</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">正数与原码相同</span><br><span class="line">反码符号位不变其余位取反加一</span><br><span class="line">补码的补码是原码</span><br></pre></td></tr></table></figure>
-<h3 id="浮点数存储方式"><a href="#浮点数存储方式" class="headerlink" title="浮点数存储方式"></a>浮点数存储方式</h3><h3 id="算术运算"><a href="#算术运算" class="headerlink" title="算术运算"></a>算术运算</h3><h3 id="比较运算符"><a href="#比较运算符" class="headerlink" title="比较运算符"></a>比较运算符</h3><h3 id="逻辑运算"><a href="#逻辑运算" class="headerlink" title="逻辑运算"></a>逻辑运算</h3><ul>
-<li>&amp;&amp; </li>
-<li>|| </li>
-<li>！<h3 id="位运算"><a href="#位运算" class="headerlink" title="位运算"></a>位运算</h3></li>
-<li>&amp; 乘法</li>
-<li>| 加法</li>
-<li>~ 取反 包括符号位</li>
-<li>^ 异或</li>
-<li>&gt;&gt; 右移</li>
-<li>&lt;&lt; 左移</li>
-</ul>
-
       
     </div>
 
