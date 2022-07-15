@@ -21,26 +21,28 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"stephenshawn.github.io","root":"/","images":"/images","scheme":"Gemini","version":"8.7.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
-<meta name="description" content="码农 程序猿 开发者">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Shawn&#39;s blog">
-<meta property="og:url" content="https://stephenshawn.github.io/archives/2022/page/2/index.html">
+<meta name="description" content="123456789 docker run -d -p 3306:3306 \--privileged&#x3D;true \-v &#x2F;opt&#x2F;mysql&#x2F;conf:&#x2F;etc&#x2F;mysql&#x2F;conf.d \-v &#x2F;opt&#x2F;mysql&#x2F;data:&#x2F;var&#x2F;lib&#x2F;mysql \-v &#x2F;opt&#x2F;mysql&#x2F;log:&#x2F;var&#x2F;log&#x2F;mysql \-e MYSQL_ROOT_PASSWORD&#x3D;123456 \--nam">
+<meta property="og:type" content="article">
+<meta property="og:title" content="docker安装mysql">
+<meta property="og:url" content="https://stephenshawn.github.io/2022/07/15/docker%E5%AE%89%E8%A3%85mysql/index.html">
 <meta property="og:site_name" content="Shawn&#39;s blog">
-<meta property="og:description" content="码农 程序猿 开发者">
+<meta property="og:description" content="123456789 docker run -d -p 3306:3306 \--privileged&#x3D;true \-v &#x2F;opt&#x2F;mysql&#x2F;conf:&#x2F;etc&#x2F;mysql&#x2F;conf.d \-v &#x2F;opt&#x2F;mysql&#x2F;data:&#x2F;var&#x2F;lib&#x2F;mysql \-v &#x2F;opt&#x2F;mysql&#x2F;log:&#x2F;var&#x2F;log&#x2F;mysql \-e MYSQL_ROOT_PASSWORD&#x3D;123456 \--nam">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-07-15T08:33:26.000Z">
+<meta property="article:modified_time" content="2022-07-15T10:58:46.079Z">
 <meta property="article:author" content="Stephen Shawn">
-<meta property="article:tag" content="program">
+<meta property="article:tag" content="mysql">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://stephenshawn.github.io/archives/2022/page/2/">
+<link rel="canonical" href="https://stephenshawn.github.io/2022/07/15/docker%E5%AE%89%E8%A3%85mysql/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"archives/2022/page/2/index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://stephenshawn.github.io/2022/07/15/docker%E5%AE%89%E8%A3%85mysql/","path":"2022/07/15/docker安装mysql/","title":"docker安装mysql"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>归档 | Shawn's blog</title>
+<title>docker安装mysql | Shawn's blog</title>
   
 
 
@@ -176,232 +178,97 @@
 </noscript>
 
 
-    <div class="main-inner archive posts-collapse">
+    <div class="main-inner post posts-expand">
 
 
   
+
+
+<div class="post-block">
   
   
-  <div class="post-block">
-    <div class="post-content">
-      <div class="collection-title">
-        <span class="collection-header">嗯..! 目前共计 24 篇日志。 继续努力。</span>
-      </div>
 
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stephenshawn.github.io/2022/07/15/docker%E5%AE%89%E8%A3%85mysql/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Stephen Shawn">
+      <meta itemprop="description" content="码农 程序猿 开发者">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Shawn's blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          docker安装mysql
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
       
-    <div class="collection-year">
-      <span class="collection-header">2022</span>
-    </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2022-06-27T17:25:00+08:00"
-              content="2022-06-27">
-          06-27
-        </time>
-      </div>
+      <time title="创建时间：2022-07-15 16:33:26 / 修改时间：18:58:46" itemprop="dateCreated datePublished" datetime="2022-07-15T16:33:26+08:00">2022-07-15</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" itemprop="url" rel="index"><span itemprop="name">数据库</span></a>
+        </span>
+    </span>
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/06/27/docker%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/" itemprop="url">
-            <span itemprop="name">docker的基本命令</span>
-          </a>
-      </div>
+  
+</div>
 
-      
-    </header>
-  </article>
+        </div>
+      </header>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2022-06-07T22:55:08+08:00"
-              content="2022-06-07">
-          06-07
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/06/07/ubuntu%E5%AE%89%E8%A3%85docker/" itemprop="url">
-            <span itemprop="name">ubuntu20.04安装docker</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2022-06-06T23:12:51+08:00"
-              content="2022-06-06">
-          06-06
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/06/06/CentOS%E5%AE%89%E8%A3%85docker/" itemprop="url">
-            <span itemprop="name">centos安装docker</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2022-06-06T23:08:46+08:00"
-              content="2022-06-06">
-          06-06
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/06/06/php%E7%89%88%E6%9C%AC/" itemprop="url">
-            <span itemprop="name">php版本</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2022-06-03T18:13:10+08:00"
-              content="2022-06-03">
-          06-03
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/06/03/vscode%E5%BF%AB%E6%8D%B7%E9%94%AE/" itemprop="url">
-            <span itemprop="name">vscode快捷键</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2022-06-03T11:11:23+08:00"
-              content="2022-06-03">
-          06-03
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/06/03/markdown%E8%AF%AD%E6%B3%95%E4%B8%8E%E6%8A%80%E5%B7%A7/" itemprop="url">
-            <span itemprop="name">markdown语法与技巧</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2022-06-03T10:44:16+08:00"
-              content="2022-06-03">
-          06-03
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/06/03/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E9%AB%98%E7%BA%A7%E6%90%9C%E7%B4%A2%E6%8A%80%E5%B7%A7/" itemprop="url">
-            <span itemprop="name">搜索引擎高级搜索技巧</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2022-06-03T10:40:20+08:00"
-              content="2022-06-03">
-          06-03
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/06/03/eclipse%E5%BF%AB%E6%8D%B7%E9%94%AE/" itemprop="url">
-            <span itemprop="name">eclipse快捷键</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2022-05-14T14:33:24+08:00"
-              content="2022-05-14">
-          05-14
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/05/14/hexo%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/" itemprop="url">
-            <span itemprop="name">hexo基本使用</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2022-05-14T10:14:00+08:00"
-              content="2022-05-14">
-          05-14
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/05/14/git-%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/" itemprop="url">
-            <span itemprop="name">git 基本使用</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"> docker run -d -p 3306:3306 \</span><br><span class="line">--privileged=<span class="literal">true</span> \</span><br><span class="line">-v /opt/mysql/conf:/etc/mysql/conf.d \</span><br><span class="line">-v /opt/mysql/data:/var/lib/mysql \</span><br><span class="line">-v /opt/mysql/<span class="built_in">log</span>:/var/<span class="built_in">log</span>/mysql \</span><br><span class="line">-e MYSQL_ROOT_PASSWORD=123456 \</span><br><span class="line">--name mysql01 mysql:5.7 \</span><br><span class="line">--character-set-server=utf8mb4 \</span><br><span class="line">--collation-server=utf8mb4_unicode_ci</span><br></pre></td></tr></table></figure>
 
 
     </div>
-  </div>
-  
-  
-  
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/archives/2022/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/archives/2022/">1</a><span class="page-number current">2</span><a class="page-number" href="/archives/2022/page/3/">3</a><a class="extend next" rel="next" href="/archives/2022/page/3/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
-  </nav>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/mysql/" rel="tag"># mysql</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2022/07/15/docker%E5%AE%89%E8%A3%85oracle/" rel="prev" title="docker安装oracle">
+                  <i class="fa fa-chevron-left"></i> docker安装oracle
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
 
 </div>
   </main>
