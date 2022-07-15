@@ -136,18 +136,18 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">22</span>
+          <span class="site-state-item-count">23</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/categories/">
-        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-count">13</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">19</span>
+        <span class="site-state-item-count">20</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -177,6 +177,89 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://stephenshawn.github.io/2022/06/07/ubuntu%E5%AE%89%E8%A3%85docker/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Stephen Shawn">
+      <meta itemprop="description" content="码农 程序猿 开发者">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Shawn's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/06/07/ubuntu%E5%AE%89%E8%A3%85docker/" class="post-title-link" itemprop="url">ubuntu安装docker</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2022-06-07 22:55:08" itemprop="dateCreated datePublished" datetime="2022-06-07T22:55:08+08:00">2022-06-07</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2022-06-27 18:33:50" itemprop="dateModified" datetime="2022-06-27T18:33:50+08:00">2022-06-27</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/docker/" itemprop="url" rel="index"><span itemprop="name">docker</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="install-on-Ubuntu"><a href="#install-on-Ubuntu" class="headerlink" title="install on Ubuntu"></a><a target="_blank" rel="noopener" href="https://docs.docker.com/engine/install/ubuntu/">install on Ubuntu</a></h1><h4 id="Uninstall-old-versions"><a href="#Uninstall-old-versions" class="headerlink" title="Uninstall old versions"></a>Uninstall old versions</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get remove docker docker-engine docker.io containerd runc</span><br></pre></td></tr></table></figure>
+
+<h4 id="Install-Docker-Engine"><a href="#Install-Docker-Engine" class="headerlink" title="Install Docker Engine"></a>Install Docker Engine</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get update</span><br><span class="line">sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin</span><br></pre></td></tr></table></figure>
+
+<h4 id="Uninstall-Docker-Engine"><a href="#Uninstall-Docker-Engine" class="headerlink" title="Uninstall Docker Engine"></a>Uninstall Docker Engine</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get purge docker-ce docker-ce-cli containerd.io docker-compose-plugin</span><br><span class="line">sudo rm -rf /var/lib/docker</span><br><span class="line">sudo rm -rf /var/lib/containerd</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -1378,79 +1461,6 @@
     
     <div class="post-body" itemprop="articleBody">
           <h4 id="Bootstrap栅格布局系统设计原理"><a href="#Bootstrap栅格布局系统设计原理" class="headerlink" title="Bootstrap栅格布局系统设计原理"></a>Bootstrap栅格布局系统设计原理</h4>
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://stephenshawn.github.io/2021/11/11/java%E6%8F%90%E9%AB%98/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Stephen Shawn">
-      <meta itemprop="description" content="码农 程序猿 开发者">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Shawn's blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/11/11/java%E6%8F%90%E9%AB%98/" class="post-title-link" itemprop="url">java提高</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2021-11-11 18:41:35 / 修改时间：18:44:53" itemprop="dateCreated datePublished" datetime="2021-11-11T18:41:35+08:00">2021-11-11</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/java%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6/" itemprop="url" rel="index"><span itemprop="name">java垃圾回收机制</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h3 id="垃圾收集器有几种"><a href="#垃圾收集器有几种" class="headerlink" title="垃圾收集器有几种"></a>垃圾收集器有几种</h3><h3 id="垃圾收集器低层原理剖析"><a href="#垃圾收集器低层原理剖析" class="headerlink" title="垃圾收集器低层原理剖析"></a>垃圾收集器低层原理剖析</h3><h3 id="垃圾收集器算法优化"><a href="#垃圾收集器算法优化" class="headerlink" title="垃圾收集器算法优化"></a>垃圾收集器算法优化</h3>
       
     </div>
 
