@@ -136,18 +136,18 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">27</span>
+          <span class="site-state-item-count">28</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/categories/">
-        <span class="site-state-item-count">15</span>
+        <span class="site-state-item-count">16</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">24</span>
+        <span class="site-state-item-count">25</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -177,6 +177,186 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://stephenshawn.github.io/2022/06/03/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E9%AB%98%E7%BA%A7%E6%90%9C%E7%B4%A2%E6%8A%80%E5%B7%A7/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Stephen Shawn">
+      <meta itemprop="description" content="码农 程序猿 开发者">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Shawn's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/06/03/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E9%AB%98%E7%BA%A7%E6%90%9C%E7%B4%A2%E6%8A%80%E5%B7%A7/" class="post-title-link" itemprop="url">搜索引擎高级搜索技巧</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2022-06-03 10:44:16 / 修改时间：17:58:19" itemprop="dateCreated datePublished" datetime="2022-06-03T10:44:16+08:00">2022-06-03</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%90%9C%E7%B4%A2/" itemprop="url" rel="index"><span itemprop="name">搜索</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h5 id="逻辑与-或"><a href="#逻辑与-或" class="headerlink" title="逻辑与/或"></a><em><strong>逻辑与/或</strong></em></h5><hr>
+<ul>
+<li>注意AND、OR必须大写，否则会被认为是普通的单词，而不是搜索指令</li>
+<li>与普通编程语言不一样的是，OR指令优先于AND指令</li>
+<li>简写：AND指令一般以空格代替，不明确写出。另外AND指令还可以用+代替。OR指令可用|代替</li>
+</ul>
+<h5 id="逻辑非："><a href="#逻辑非：" class="headerlink" title="逻辑非：-"></a><em><strong>逻辑非：-</strong></em></h5><hr>
+<ul>
+<li>样例：搜索引擎 历史 -文化 -中国历史 -世界历史</li>
+</ul>
+<h5 id="完整匹配-“-“"><a href="#完整匹配-“-“" class="headerlink" title="完整匹配 “ “"></a><em><strong>完整匹配 “ “</strong></em></h5><hr>
+<ul>
+<li>样例：”world war I” 表示搜索一次世界大战</li>
+</ul>
+<h5 id="通配符："><a href="#通配符：" class="headerlink" title="通配符：*?"></a><em><strong>通配符：*?</strong></em></h5><hr>
+<ul>
+<li>与我们通常的习惯一致，“*”代表一连串字符，“?”代表单个字符</li>
+</ul>
+<h5 id="site-在某个网站或域名下搜索"><a href="#site-在某个网站或域名下搜索" class="headerlink" title="site: 在某个网站或域名下搜索"></a><em><strong>site: 在某个网站或域名下搜索</strong></em></h5><hr>
+<ul>
+<li>样例：搜索引擎 技巧 site:edu.cn</li>
+<li>这表示要在中文教育科研网站（edu.cn）上关于搜索引擎技巧的页面</li>
+</ul>
+<h5 id="filetype-搜索某种类型的文件"><a href="#filetype-搜索某种类型的文件" class="headerlink" title="filetype: 搜索某种类型的文件"></a><em><strong>filetype: 搜索某种类型的文件</strong></em></h5><hr>
+<ul>
+<li>样例：天文学 filetype:pdf </li>
+<li>简写: 天文学:pdf</li>
+<li>这表示只搜索pdf文件</li>
+<li>tips：样例 天文学三个字位置任意写 </li>
+</ul>
+<h5 id="in指令-位置关键词查找"><a href="#in指令-位置关键词查找" class="headerlink" title="in指令: 位置关键词查找"></a><em><strong>in指令: 位置关键词查找</strong></em></h5><hr>
+<ul>
+<li>intitle: 在网页标题中查找。这通常对讨论比较多的热门话题很有效。例如：intitle:”GeForce 7800”+测试</li>
+<li>例如：allintitile:”GeForce 7800” 测试 与 intitle:”GeForce 7800”+测试 的含义一致。但是，allintitile是排他的，不能加上其他非intitle方面的限制条件</li>
+<li>inurl: 在网页的url地址中查找。例如：inurl:dowload 表示查找url中包含download的网页</li>
+<li>allinurl: inurl的排他指令</li>
+<li>inanchor: 在网页的链接锚中查找</li>
+</ul>
+<h5 id="link-搜索所有链接到某个URL地址的网页"><a href="#link-搜索所有链接到某个URL地址的网页" class="headerlink" title="link: 搜索所有链接到某个URL地址的网页"></a><em><strong>link: 搜索所有链接到某个URL地址的网页</strong></em></h5><hr>
+<ul>
+<li>例如：link:<a target="_blank" rel="noopener" href="http://www.newhua.com/">www.newhua.com</a> 表示所有指向“华军软件园”外部链接。</li>
+</ul>
+<h5 id="related-寻找某网页的“类似网页”"><a href="#related-寻找某网页的“类似网页”" class="headerlink" title="related: 寻找某网页的“类似网页”"></a><em><strong>related: 寻找某网页的“类似网页”</strong></em></h5><hr>
+<ul>
+<li>例如：related:<a target="_blank" rel="noopener" href="http://www.newhua.com/">www.newhua.com</a> 表示找和“华军软件园”类似的网页。</li>
+</ul>
+<h5 id="cache-网页快照（略"><a href="#cache-网页快照（略" class="headerlink" title="cache: 网页快照（略)"></a><em><strong>cache: 网页快照（略)</strong></em></h5><hr>
+<ul>
+<li>查看网站的 Google 缓存版本，会直接显示缓存页面    </li>
+<li>cache:weibo.com    查看微博的谷歌快照</li>
+</ul>
+<h5 id="daterange-查找特定时间网页"><a href="#daterange-查找特定时间网页" class="headerlink" title="daterange 查找特定时间网页"></a><em><strong>daterange 查找特定时间网页</strong></em></h5><hr>
+<ul>
+<li>例如：”Spice Girls“ daterange:2450958-2450968。这里时间日期的格式是按天文学的儒略日</li>
+<li>儒略日数（Julian Day Number，JDN）的计算是从格林威治标准时间的中午开始，包含一个整天的时间，起点的时间（0日）回溯至儒略历的公元前4713年1月1日中午12点（在格里历是公元前4714年11月24日），这个日期是三种多年周期的共同起点，且是历史上最接近现代的一个起点。例如，2000年1月1日的UT12:00是儒略日2,451,545。</li>
+<li>世界时UT即格林尼治平太阳时间，是指格林尼治所在地的标准时间，也是表示地球自转速率的一种形式。以地球自转为基础的时间计量系统。</li>
+<li>格林尼治（Greenwich），是英国伦敦的一个区，位于伦敦东南、泰晤士河南岸</li>
+</ul>
+<h5 id="表示数值范围"><a href="#表示数值范围" class="headerlink" title=".. 表示数值范围"></a><em><strong>.. 表示数值范围</strong></em></h5><hr>
+<ul>
+<li>例如：数码相机 600..900 万像素 3000..4000 元</li>
+<li>注意：“900”与“万”之间必须有空格。</li>
+</ul>
+<h5 id=""><a href="#" class="headerlink" title="@"></a><em><strong>@</strong></em></h5><hr>
+<ul>
+<li>在用于搜索社交媒体的字词前加上@    trump @twitter    搜索trump的twitter</li>
+</ul>
+<h5 id="-1"><a href="#-1" class="headerlink" title="$"></a><em><strong>$</strong></em></h5><hr>
+<ul>
+<li>在数字前加上$搜索特定价格    camera $400    搜索400$的camera</li>
+</ul>
+<h5 id="-2"><a href="#-2" class="headerlink" title="#"></a><em><strong>#</strong></em></h5><hr>
+<ul>
+<li>搜索 # 标签    #throwbackthursday    </li>
+<li>搜索标签throwbackthursday</li>
+</ul>
+<h5 id="info"><a href="#info" class="headerlink" title="info"></a><em><strong>info</strong></em></h5><hr>
+<ul>
+<li>在网址前加info:，获取网站详情    info:github.com    搜索github网站详情</li>
+</ul>
+<h5 id="intext"><a href="#intext" class="headerlink" title="intext"></a><em><strong>intext</strong></em></h5><hr>
+<ul>
+<li>搜索查询词出现在页面正文(title)中的页面，支持中文和英文    SEO intext:搜索引擎    在正文包含【搜索引擎】的网页中搜索【SEO】</li>
+</ul>
+<h5 id="allintext"><a href="#allintext" class="headerlink" title="allintext"></a><em><strong>allintext</strong></em></h5><hr>
+<ul>
+<li>即all+inanchor 页面正文包含多个关键词的页面    allintext:SEO 搜索引擎优化    相当于：intext:SEO intext:搜索引擎优化</li>
+</ul>
+<h5 id="inanchor"><a href="#inanchor" class="headerlink" title="inanchor"></a><em><strong>inanchor</strong></em></h5><hr>
+<ul>
+<li>搜索链接锚文字(即链接显示的文字)中包含搜索词的页面    inanchor:前端    搜索链接锚文字中包含【前端】的页面</li>
+</ul>
+<h5 id="allinanchor"><a href="#allinanchor" class="headerlink" title="allinanchor"></a><em><strong>allinanchor</strong></em></h5><hr>
+<ul>
+<li><pre><code>即all+inanchor 页面链接锚文字包含多个关键词的页面    allinanchor:SEO 搜索引擎优化    相当于：inanchor:SEO inanchor:搜索引擎优化
+</code></pre>
+</li>
+</ul>
+<h5 id="weather"><a href="#weather" class="headerlink" title="weather"></a><em><strong>weather</strong></em></h5><hr>
+<ul>
+<li>weather/time/sunrise/sundown+城市名，返回城市的天气/时间/日出时间/日落时间</li>
+<li>weather:beijing    显示北京的天气</li>
+</ul>
+<h5 id="music"><a href="#music" class="headerlink" title="music"></a><em><strong>music</strong></em></h5><hr>
+<ul>
+<li>music或者用songs，歌手名字+music/songs    周杰伦 music    返回周杰伦的各首歌曲</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
